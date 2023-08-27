@@ -10,25 +10,27 @@
 </head>
 
 <body>
-  <h1>Image Looper</h1>
-  <div class="input-field">
-    <label for="start-index">Image Url</label>
-    <input type="text" id="image-url" name="image-url" style="width:100%;" />
+  <div class="content">
+    <h1>Image Looper</h1>
+    <div class="input-field">
+      <label for="start-index">Image Url</label>
+      <input type="text" id="image-url" name="image-url" style="width:100%;" />
+    </div>
+    <p>Note: Image Url should be like https://so.com/image_{index}.png,
+      {index} is used to generate image urls.
+    </p>
+    <form id="image-form">
+      <div class="input-field">
+        <label for="start-index">Start Index:</label>
+        <input type="number" id="start-index" name="start-index" min="1" value="1" />
+      </div>
+      <div class="input-field">
+        <label for="end-index">End Index:</label>
+        <input type="number" id="end-index" name="end-index" min="1" value="1" />
+      </div>
+      <button type="submit">Render Images</button>
+    </form>
   </div>
-  <p>Note: Image Url should be like https://so.com/image_{index}.png,
-    {index} is used to generate image urls.
-  </p>
-  <form id="image-form">
-    <div class="input-field">
-      <label for="start-index">Start Index:</label>
-      <input type="number" id="start-index" name="start-index" min="1" value="1" />
-    </div>
-    <div class="input-field">
-      <label for="end-index">End Index:</label>
-      <input type="number" id="end-index" name="end-index" min="1" value="1" />
-    </div>
-    <button type="submit">Render Images</button>
-  </form>
   <div id="image-container"></div>
   <script src="script.js"></script>
 </body>
