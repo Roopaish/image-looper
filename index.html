@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Looper</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://bouncecss.bookie0.repl.co/bounce.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Image Looper</h1>
+  <div class="input-field">
+    <label for="start-index">Image Url</label>
+    <input type="text" id="image-url" name="image-url" style="width:100%;" />
+  </div>
+  <code>Note: Image Url should be like https://so.com/image_{index}.png <br />
+    {index} is used to generate image urls.
+  </cod>
+  <form id="image-form">
+    <div class="input-field">
+      <label for="start-index">Start Index:</label>
+      <input type="number" id="start-index" name="start-index" min="1" value="1" />
+    </div>
+    <div class="input-field">
+      <label for="end-index">End Index:</label>
+      <input type="number" id="end-index" name="end-index" min="1" value="1" />
+    </div>
+    <button type="submit">Render Images</button>
+  </form>
+  <div id="image-container"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
