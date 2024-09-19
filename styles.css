@@ -15,13 +15,7 @@ button {
   padding: 5px 10px;
 }
 
-#image-container {
-  max-width: 500px;
-  margin: 0 auto;
-}
-
 img {
   width: 100%;
   object-fit: cover;
-  max-width: 500px;
 }

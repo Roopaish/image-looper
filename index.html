@@ -14,9 +14,10 @@
     <h1>Image Looper</h1>
     <div class="input-field">
       <label for="start-index">Image Url</label>
-      <input type="text" id="image-url" name="image-url" style="width:100%;" value="https://source.unsplash.com/random/{index}"/>
+      <input type="text" id="image-url" name="image-url" style="width:100%;"
+        value="https://loremflickr.com/g/320/240/{index}" />
     </div>
-    <p>Note: Image Url should be like https://source.unsplash.com/random/{index} or https://so.com/image_{index}.png,
+    <p>Note: Image Url should be like https://loremflickr.com/g/320/240/{index} or https://so.com/image_{index}.png,
       {index} is used to generate image urls.
     </p>
     <form id="image-form">
@@ -27,6 +28,22 @@
       <div class="input-field">
         <label for="end-index">End Index:</label>
         <input type="number" id="end-index" name="end-index" min="1" value="5" />
+      </div>
+      <div class="input-field">
+        <label for="padding-left">Padding Left:</label>
+        <input type="number" id="padding-left" name="padding-left" min="0" value="0" />
+      </div>
+      <div class="input-field">
+        <label for="padding-left">Padding Right:</label>
+        <input type="number" id="padding-right" name="padding-right" min="0" value="0" />
+      </div>
+      <div class="input-field">
+        <label for="container-max-width">Image Container Max Width:</label>
+        <input type="number" id="container-max-width" name="container-max-width" min="200" value="500" />
+      </div>
+      <div class="input-field">
+        <label for="max-width">Image Max Width:</label>
+        <input type="number" id="max-width" name="max-width" min="200" value="500" />
       </div>
       <button type="submit">Render Images</button>
     </form>
